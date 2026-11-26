@@ -1,0 +1,37 @@
+{
+    "protocolVersion": "0.3.0",
+    "name": "Contract Agent",
+    "description": "Drafts contract terms for a deal from the Legal / CLM system, choosing standard, extended (3-year) or secured (advance payment) templates.",
+    "url": "https://deal-desk-agents.onrender.com/contract",
+    "preferredTransport": "JSONRPC",
+    "version": "1.0.0",
+    "provider": {
+        "organization": "Deal Desk Demo",
+        "url": "https://deal-desk-agents.onrender.com"
+    },
+    "capabilities": {
+        "streaming": false
+    },
+    "defaultInputModes": [
+        "text"
+    ],
+    "defaultOutputModes": [
+        "text"
+    ],
+    "skills": [
+        {
+            "id": "contract_draft",
+            "name": "Draft contract terms",
+            "description": "Draft a contract for deal Y with X% discount. Returns draft ID, template, final price, terms and reason.",
+            "tags": [
+                "contract",
+                "legal",
+                "terms",
+                "deal desk"
+            ],
+            "examples": [
+                "Draft contract for ACME-Q4 with 20% discount"
+            ]
+        }
+    ]
+}

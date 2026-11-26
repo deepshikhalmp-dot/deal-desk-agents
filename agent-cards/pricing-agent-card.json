@@ -1,0 +1,37 @@
+{
+    "protocolVersion": "0.3.0",
+    "name": "Pricing Agent",
+    "description": "Checks a requested discount against margin rules in the ERP and says if it is approved, needs VP approval, or is not allowed.",
+    "url": "https://deal-desk-agents.onrender.com/pricing",
+    "preferredTransport": "JSONRPC",
+    "version": "1.0.0",
+    "provider": {
+        "organization": "Deal Desk Demo",
+        "url": "https://deal-desk-agents.onrender.com"
+    },
+    "capabilities": {
+        "streaming": false
+    },
+    "defaultInputModes": [
+        "text"
+    ],
+    "defaultOutputModes": [
+        "text"
+    ],
+    "skills": [
+        {
+            "id": "discount_check",
+            "name": "Discount check",
+            "description": "Is X% discount allowed on deal Y? Returns decision, discount value and margin impact.",
+            "tags": [
+                "pricing",
+                "discount",
+                "margin",
+                "deal desk"
+            ],
+            "examples": [
+                "Can ACME-Q4 get 20% discount?"
+            ]
+        }
+    ]
+}

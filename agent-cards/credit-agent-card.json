@@ -1,0 +1,38 @@
+{
+    "protocolVersion": "0.3.0",
+    "name": "Credit Agent",
+    "description": "Checks a customer's payment history, credit risk and credit limit from the credit bureau / AR system and recommends payment terms.",
+    "url": "https://deal-desk-agents.onrender.com/credit",
+    "preferredTransport": "JSONRPC",
+    "version": "1.0.0",
+    "provider": {
+        "organization": "Deal Desk Demo",
+        "url": "https://deal-desk-agents.onrender.com"
+    },
+    "capabilities": {
+        "streaming": false
+    },
+    "defaultInputModes": [
+        "text"
+    ],
+    "defaultOutputModes": [
+        "text"
+    ],
+    "skills": [
+        {
+            "id": "credit_check",
+            "name": "Customer credit check",
+            "description": "Is customer X (or the customer on deal Y) creditworthy? Returns risk score, payment history, limit check and recommendation.",
+            "tags": [
+                "credit",
+                "risk",
+                "payment history",
+                "deal desk"
+            ],
+            "examples": [
+                "Check credit for Acme Retail",
+                "Credit check for GLOBEX-Q4"
+            ]
+        }
+    ]
+}
